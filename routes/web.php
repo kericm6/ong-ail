@@ -4,6 +4,8 @@ use App\Http\Controllers\contactController;
 use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 
+Route::redirect('/', '/accueil');
+
 Route::get('/accueil', [homeController::class, 'index'])->name('home');
 
 

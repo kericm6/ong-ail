@@ -147,7 +147,7 @@
                     Actualités
                 </a>
 
-                <a href="#contact"
+                <a href="{{ route('contact.index') }}"
                          class="font-semibold text-gray-700 hover:text-primary">
                     Contact
                 </a>
