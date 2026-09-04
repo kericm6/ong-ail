@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import 'owl.carousel/dist/assets/owl.carousel.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.owl-theme .owl-nav {
+   margin-top: 10px;
+   text-align: center;
+   -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+   color: #fff;
+   font-size: 14px;
+   margin: 5px;
+   padding: 4px 7px;
+   background: #d6d6d6;
+   display: inline-block;
+   cursor: pointer;
+   border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+   background: #869791;
+   color: #fff;
+   text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled {
+   opacity: 0.5;
+   cursor: default;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+   margin-top: 10px;
+}
+
+.owl-theme .owl-dots {
+   text-align: center;
+   -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot {
+   display: inline-block;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+   width: 10px;
+   height: 10px;
+   margin: 5px 7px;
+   background: #d6d6d6;
+   display: block;
+   -webkit-backface-visibility: visible;
+   transition: opacity 200ms ease;
+   border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+   background: #869791;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+a,
+button,
+[role="button"],
+.dropdown-trigger,
+.dropdown-menu a,
+.font-display {
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+    /* ================================
+       AIL — COULEURS PRINCIPALES
+       ================================ */
+
+    --color-primary: #084d82;
+    --color-primary-dark: #053a5d;
+    --color-primary-light: #dff5f6;
+
+    /* ================================
+       VERT INSTITUTIONNEL
+       Développement • croissance • action
+       ================================ */
+
+    --color-secondary: #17af3a;
+    --color-secondary-dark: #128b2d;
+    --color-secondary-light: #e5f7e9;
+
+    /* ================================
+       BLEU SECONDARY ACCENT
+       Confiance • sérieux • stabilité
+       ================================ */
+
+    --color-success: #0a64a8;
+    --color-success-dark: #084d82;
+    --color-success-light: #e5f1fa;
+
+    /* ================================
+       JAUNE
+       Espoir • optimisme • énergie
+       ================================ */
+
+    --color-accent: #f4c542;
+    --color-accent-dark: #d9aa18;
+    --color-accent-light: #fff8dc;
+
+    /* ================================
+       COULEURS NEUTRES
+       ================================ */
+
+    --color-dark: #123047;
+    --color-gray: #64748b;
+    --color-light: #f4f9fa;
+    --color-white: #ffffff;
+}
+
+/* =========================================================
+   CORRECTION NAVBAR → SLIDER
+========================================================= */
+
