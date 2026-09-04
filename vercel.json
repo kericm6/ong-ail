@@ -3,37 +3,13 @@
   "framework": null,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.6.2"
+      "runtime": "vercel-php@0.7.4"
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/build/(.*)",
-      "dest": "/public/build/"
-    },
-    {
-      "src": "/storage/build/(.*)",
-      "dest": "/public/storage/build/"
-    },
-    {
-      "src": "/css/(.*)",
-      "dest": "/public/css/"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/public/images/"
-    },
-    {
-      "src": "/js/(.*)",
-      "dest": "/public/js/"
-    },
-    {
-      "src": "/vendors/(.*)",
-      "dest": "/public/vendors/"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
+      "source": "/(.*)",
+      "destination": "/api/index.php"
     }
   ],
   "env": {
@@ -49,7 +25,5 @@
     "CACHE_DRIVER": "array",
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie"
-  },
-  "buildCommand": "vite build",
-  "outputDirectory": "public"
+  }
 }
