@@ -62,11 +62,11 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
                     <div class="border-l-4 border-secondary bg-[var(--color-secondary-light)] px-5 py-4">
-                        <span class="block text-3xl font-extrabold text-[var(--color-dark)]">2002</span>
+                        <span class="block text-3xl font-extrabold text-secondary">2002</span>
                         <span class="text-sm font-medium text-[var(--color-gray)]">Année de création</span>
                     </div>
                     <div class="border-l-4 border-[var(--color-accent)] bg-[var(--color-accent-light)] px-5 py-4">
-                        <span class="block text-3xl font-extrabold text-[var(--color-dark)]">Kpalimé</span>
+                        <span class="block text-3xl font-extrabold text-accent">Kpalimé</span>
                         <span class="text-sm font-medium text-[var(--color-gray)]">Ancrage territorial</span>
                     </div>
                 </div>
@@ -93,71 +93,70 @@
 {{-- 2. NOS DOMAINES D'INTERVENTION --}}
 <section class="relative overflow-hidden bg-[var(--color-light)] py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-end mb-12">
+        <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
+            <div class="lg:col-span-7">
+                <div class="mb-9 max-w-2xl">
+                    <div class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-secondary">
+                        <span class="h-px w-10 bg-secondary"></span>
+                        Piliers d'action
+                    </div>
+                    <h2 class="mt-3 text-3xl font-extrabold text-[var(--color-dark)] sm:text-4xl">Nos domaines d’intervention</h2>
+                    <p class="mt-4 text-base leading-relaxed text-[var(--color-gray)]">
+                        Des actions concrètes, pensées avec les communautés pour renforcer leur autonomie et préserver leur environnement.
+                    </p>
+                </div>
+
+                <div class="space-y-1">
+                    <article class="group flex gap-4 border-t border-slate-200 pt-2">
+                        <span class="text-sm font-black text-secondary">01</span>
+                        <div>
+                            <h3 class="mb-2 text-lg font-bold text-secondary">Autonomisation des femmes</h3>
+                            <p class="text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">Accompagnement des coopératives féminines agricoles et artisanales, de la production à la commercialisation.</p>
+                        </div>
+                    </article>
+
+                    <article class="group flex gap-4 border-t border-slate-200 pt-2">
+                        <span class="text-sm font-black text-primary">02</span>
+                        <div>
+                            <h3 class="mb-2 text-lg font-bold text-primary">Durabilité environnementale</h3>
+                            <p class="text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">Des solutions comme les biodigesteurs pour valoriser les déchets et produire du biogaz et des biofertilisants.</p>
+                        </div>
+                    </article>
+
+                    <article class="group flex gap-4 border-t border-slate-200 pt-2">
+                        <span class="text-sm font-black text-[var(--color-accent-dark)]">03</span>
+                        <div>
+                            <h3 class="mb-2 text-lg font-bold text-[var(--color-accent-dark)]">Formation des jeunes filles</h3>
+                            <p class="text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">Le CIPE accompagne les jeunes filles vulnérables vers la formation et l’insertion socio-professionnelle.</p>
+                        </div>
+                    </article>
+
+                    <article class="group flex gap-4 border-t border-slate-200 pt-2">
+                        <span class="text-sm font-black text-success">04</span>
+                        <div>
+                            <h3 class="mb-2 text-lg font-bold text-success">Communautés renforcées</h3>
+                            <p class="text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">Création de groupes et de coopératives pour faire des populations les actrices de leur développement.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
             <div class="lg:col-span-5">
-                <div class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-secondary">
-                    <span class="h-px w-10 bg-secondary"></span>
-                    Piliers d'action
+                <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                    <div class="group relative col-span-2 overflow-hidden bg-white shadow-sm">
+                        <img src="{{ asset('images/projet2.png') }}" alt="Action collective dans un champ communautaire" class="h-56 w-full object-cover sm:h-64">
+                        <div class="pointer-events-none absolute inset-0 bg-primary/10 transition-colors duration-300 group-hover:bg-primary/20"></div>
+                    </div>
+                    <div class="group relative overflow-hidden bg-white shadow-sm">
+                        <img src="{{ asset('images/projet1.png') }}" alt="Agriculture durable portée par les femmes" class="h-36 w-full object-cover sm:h-44">
+                        <div class="pointer-events-none absolute inset-0 bg-secondary/10 transition-colors duration-300 group-hover:bg-secondary/20"></div>
+                    </div>
+                    <div class="group relative overflow-hidden bg-white shadow-sm">
+                        <img src="{{ asset('images/projet3.png') }}" alt="Formation et activité génératrice de revenus" class="h-36 w-full object-cover object-[center_35%] sm:h-44">
+                        <div class="pointer-events-none absolute inset-0 bg-accent/10 transition-colors duration-300 group-hover:bg-accent/20"></div>
+                    </div>
                 </div>
-                <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-[var(--color-dark)]">
-                    Des solutions pensées pour le terrain
-                </h2>
             </div>
-            <p class="lg:col-span-7 max-w-2xl text-base leading-relaxed text-[var(--color-gray)] lg:pb-1">
-                Nos interventions répondent aux besoins concrets des communautés et relient inclusion sociale, autonomie économique et protection de l’environnement.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
-            
-            {{-- Domaine 1 --}}
-            <div class="group relative overflow-hidden border-l-4 border-secondary bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
-                <span class="absolute right-6 top-5 text-4xl font-black text-secondary/15">01</span>
-                <div class="relative mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-secondary-light)] text-secondary transition group-hover:bg-secondary group-hover:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                </div>
-                <h3 class="relative mb-3 text-xl font-bold text-[var(--color-dark)]">Autonomisation économique et sociale des femmes</h3>
-                <p class="relative text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">
-                    Accompagnement des coopératives féminines agricoles et artisanales pour la production, la transformation et la commercialisation de produits locaux et bio.
-                </p>
-            </div>
-
-            {{-- Domaine 2 --}}
-            <div class="group relative overflow-hidden border-l-4 border-[var(--color-primary)] bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
-                <span class="absolute right-6 top-5 text-4xl font-black text-primary/15">02</span>
-                <div class="relative mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-primary-light)] text-primary transition group-hover:bg-primary group-hover:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                </div>
-                <h3 class="relative mb-3 text-xl font-bold text-[var(--color-dark)]">Innovation et durabilité environnementale</h3>
-                <p class="relative text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">
-                    Mise en place de projets tels que les biodigesteurs pour valoriser les déchets organiques et produire du biogaz et des biofertilisants.
-                </p>
-            </div>
-
-            {{-- Domaine 3 --}}
-            <div class="group relative overflow-hidden border-l-4 border-[var(--color-accent)] bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
-                <span class="absolute right-6 top-5 text-4xl font-black text-accent/25">03</span>
-                <div class="relative mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-accent-light)] text-[var(--color-accent-dark)] transition group-hover:bg-accent group-hover:text-[var(--color-dark)]">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
-                </div>
-                <h3 class="relative mb-3 text-xl font-bold text-[var(--color-dark)]">Formation et insertion des jeunes filles (CIPE)</h3>
-                <p class="relative text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">
-                    Prise en charge des jeunes filles déscolarisées ou vulnérables au <strong class="text-[var(--color-dark)]">Centre Incubateur de l’AIL (CIPE)</strong>, avec un accompagnement complet pour leur formation et leur insertion socio-professionnelle.
-                </p>
-            </div>
-
-            {{-- Domaine 4 --}}
-            <div class="group relative overflow-hidden border-l-4 border-[var(--color-success)] bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
-                <span class="absolute right-6 top-5 text-4xl font-black text-success/15">04</span>
-                <div class="relative mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-success-light)] text-success transition group-hover:bg-success group-hover:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-                </div>
-                <h3 class="relative mb-3 text-xl font-bold text-[var(--color-dark)]">Renforcement des communautés</h3>
-                <p class="relative text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">
-                    Promotion de la création de groupes d’intérêt et de coopératives, sensibilisation des populations à la participation active au développement local et lutte contre les fléaux socio-économiques.
-                </p>
-            </div>
-
         </div>
     </div>
 </section>
