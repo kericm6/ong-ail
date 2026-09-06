@@ -21,11 +21,9 @@
 
                 <div class="space-y-4 text-[var(--color-dark)] leading-relaxed text-base">
                     <p class="text-justify">
-                        Fondée en 2018 par des acteurs engagés, notre organisation œuvre pour l'autonomisation durable des communautés locales. Nous nous concentrons sur l'éducation de qualité pour tous, l'accès à la santé et le développement économique responsable.
+                        La mission de l’ONG Appui aux Initiatives Locales (AIL) est de contribuer à l’amélioration durable des conditions de vie des communautés de base, en particulier des femmes et des jeunes, à travers l’autonomisation économique et sociale, l’insertion socioprofessionnelle, la promotion de l’agriculture biologique et des énergies vertes, ainsi que l’accès équitable à l’éducation, à la santé, aux droits humains et aux opportunités économiques, tout en renforçant un développement local participatif, inclusif et durable.
                     </p>
-                    <p class="text-justify">
-                        En collaboration avec les bénéficiaires et des partenaires internationaux, nous avons impacté plus de 5000 vies à travers des projets concrets et mesurables. Notre transparence et notre impact sont au cœur de notre démarche.
-                    </p>
+
                 </div>
 
                 <!-- CTA -->
