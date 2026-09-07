@@ -1,9 +1,9 @@
 <section class="py-16 bg-[var(--color-light)]">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
             
             <!-- BLOC GAUCHE : À Propos (Image + Texte + CTA) -->
-            <div class="lg:col-span-7 flex flex-col space-y-6">
+            <div class="flex flex-col space-y-6 lg:col-span-7">
                 <!-- Image -->
                 <div class="relative overflow-hidden shadow-sm border border-[var(--color-primary-light)]">
                     <img 
@@ -35,74 +35,17 @@
                 </div>
             </div>
 
-
-            <!-- BLOC DROITE : Sidebar Blog (Cartes Superposées) -->
-            <aside class="lg:col-span-5 bg-white p-6 border border-gray-100 shadow-sm flex flex-col">
-                
-                <!-- En-tête Sidebar -->
-                <div class="flex items-center justify-between pb-4 mb-6 border-b border-[var(--color-primary-light)]">
-                    <h3 class="text-lg font-semibold text-secondary sm:text-xl">
-                        Dernieres Actualités
-                    </h3>
-                </div>
-
-                <!-- Cartes Superposées (Stack) -->
-                <div class="flex flex-col gap-4">
-                    
-                    <!-- Carte 1 -->
-                    <article class="p-4 bg-[var(--color-light)] border border-gray-100 hover:shadow-md transition-all group">
-                        <span class="text-xs font-semibold text-[var(--color-gray)]">12 Mai 2026</span>
-                        <h4 class="font-bold text-[var(--color-dark)] text-base mt-1 mb-2 group-hover:text-[var(--color-primary)] transition-colors leading-snug">
-                            <a href="/blog/succes-campagne-sante">Retour sur notre grande journée de santé communautaire</a>
-                        </h4>
-                        <p class="text-[var(--color-gray)] text-xs line-clamp-2 mb-3">
-                            Grâce à l'aide de nos bénévoles, nous avons pu ausculter plus de 300 enfants ce weekend...
-                        </p>
-                        <a href="/blog/succes-campagne-sante" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary group-hover:text-[var(--color-secondary)] transition-colors">
-                            <span class="text-[var(--color-secondary)]">&rarr;</span>
-                            <span>Lire la suite</span>
-                        </a>
-                    </article>
-
-                    <!-- Carte 2 -->
-                    <article class="p-4 bg-[var(--color-light)] border border-gray-100 hover:shadow-md transition-all group">
-                        <span class="text-xs font-semibold text-[var(--color-gray)]">28 Avril 2026</span>
-                        <h4 class="font-bold text-[var(--color-dark)] text-base mt-1 mb-2 group-hover:text-[var(--color-primary)] transition-colors leading-snug">
-                            <a href="/blog/nouveau-partenaire">Un nouveau soutien pour nos programmes éducatifs</a>
-                        </h4>
-                        <p class="text-[var(--color-gray)] text-xs line-clamp-2 mb-3">
-                            Signature officielle d'un accord visant à équiper 3 nouvelles écoles d'outils numériques.
-                        </p>
-                        <a href="/blog/succes-campagne-sante" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary group-hover:text-[var(--color-secondary)] transition-colors">
-                            <span class="text-[var(--color-secondary)]">&rarr;</span>
-                            <span>Lire la suite</span>
-                        </a>
-                    </article>
-
-                    <!-- Carte 3 -->
-                    <article class="p-4 bg-[var(--color-light)] border border-gray-100 hover:shadow-md transition-all group">
-                        <span class="text-xs font-semibold text-[var(--color-gray)]">15 Avril 2026</span>
-                        <h4 class="font-bold text-[var(--color-dark)] text-base mt-1 mb-2 group-hover:text-[var(--color-primary)] transition-colors leading-snug">
-                            <a href="/blog/temoignage-aminata">« L'accès aux cours a changé ma vie »</a>
-                        </h4>
-                        <p class="text-[var(--color-gray)] text-xs line-clamp-2 mb-3">
-                            Découvrez le parcours inspirant d'Aminata, bénéficiaire de notre programme.
-                        </p>
-                        <a href="/blog/succes-campagne-sante" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary group-hover:text-[var(--color-secondary)] transition-colors">
-                            <span class="text-[var(--color-secondary)]">&rarr;</span>
-                            <span>Lire la suite</span>
-                        </a>
-                    </article>
-
-                </div>
-                <!-- Pied de Sidebar -->
-                <div class="mt-6 pt-4 border-t border-gray-100 text-center">
-                    <a href="/blog" class="inline-flex items-center gap-2 text-sm text-[var(--color-primary)] font-semibold hover:text-secondary transition-colors">
-                        <span>Voir tous les articles du blog</span>
-                        <span class="text-[var(--color-secondary)]">&rarr;</span>
-                    </a>
-                </div>
-
+            <aside class="flex min-h-[320px] flex-col justify-center border border-[var(--color-primary-light)] bg-white p-8 text-center shadow-sm lg:col-span-5">
+                <h3 class="text-2xl font-extrabold uppercase text-[var(--color-dark)]">
+                    Actualités
+                </h3>
+                <div class="mx-auto mt-4 h-1 w-12 bg-secondary"></div>
+                <p class="mt-6 text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">
+                    Retrouvez bientôt les nouvelles, activités et temps forts de l’ONG AIL.
+                </p>
+                <span class="mx-auto mt-6 inline-flex items-center border border-secondary px-4 py-2 text-xs font-bold uppercase tracking-wide text-[var(--color-primary)]">
+                    Bientôt disponible
+                </span>
             </aside>
 
         </div>

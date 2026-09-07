@@ -112,7 +112,7 @@
                     Nos projets
                 </a>
 
-                <a href="{{ url('/actualites') }}"
+                <a href="{{ route('blog') }}"
                    @class([
                        'text-sm font-semibold hover:text-primary',
                        'text-primary' => $newsActive,
@@ -245,7 +245,7 @@
                     Nos projets
                 </a>
 
-                <a href="#actualites"
+                <a href="{{ route('blog') }}"
                    @class([
                        'font-semibold hover:text-primary',
                        'text-primary' => $newsActive,
