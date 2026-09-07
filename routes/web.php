@@ -8,6 +8,8 @@ Route::redirect('/', '/accueil');
 
 Route::get('/accueil', [homeController::class, 'index'])->name('home');
 Route::get('/a-propos', [homeController::class, 'about'])->name('about');
+Route::get('/notre-histoire', [homeController::class, 'history'])->name('histoire');
+Route::get('/notre-equipe', [homeController::class, 'equipe'])->name('equipe');
 
 
 Route::get('/contact', [contactController::class, 'index'])->name('contact.index');

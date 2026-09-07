@@ -61,13 +61,13 @@
                 </p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
-                    <div class="border-l-4 border-secondary bg-[var(--color-secondary-light)] px-5 py-4">
+                    <div class="border-l-4 border-secondary bg-[var(--color-secondary-light)] px-5 py-3">
                         <span class="block text-3xl font-extrabold text-secondary">2002</span>
                         <span class="text-sm font-medium text-[var(--color-gray)]">Année de création</span>
                     </div>
-                    <div class="border-l-4 border-[var(--color-accent)] bg-[var(--color-accent-light)] px-5 py-4">
+                    <div class="border-l-4 border-[var(--color-accent)] bg-[var(--color-accent-light)] px-5 py-3">
                         <span class="block text-3xl font-extrabold text-accent">Kpalimé</span>
-                        <span class="text-sm font-medium text-[var(--color-gray)]">Ancrage territorial</span>
+                        <span class="text-sm font-medium text-[var(--color-gray)]">Notre siège</span>
                     </div>
                 </div>
             </div>

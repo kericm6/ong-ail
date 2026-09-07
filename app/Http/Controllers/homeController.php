@@ -13,4 +13,11 @@ class homeController extends Controller
     public function about(){
         return view('pages.about');
     }
+
+    public function history(){
+        return view('pages.histoire');
+    }
+    public function equipe(){
+        return view('pages.equipe');
+    }
 }

@@ -6,7 +6,7 @@
             <!-- Col 1 : À propos ONG -->
             <div class="space-y-4">
                 <a href="{{ url('/') }}" class="inline-block">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo ONG AIL" class="h-25 w-auto" />
+                    <img src="{{ asset('images/LOGO_ONG.png') }}" alt="Logo ONG AIL" class="h-25 w-auto" />
                 </a>
                 <p class="text-gray-300 text-sm leading-relaxed">
                     Organisation non gouvernementale dédiée à l'autonomisation, la santé et l'éducation des communautés locales.

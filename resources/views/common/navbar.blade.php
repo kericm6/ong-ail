@@ -1,3 +1,10 @@
+@php
+    $aboutActive = request()->routeIs('about', 'histoire') || request()->is('notre-equipe', 'nos-objectifs');
+    $domainsActive = request()->is('domaines*');
+    $projectsActive = request()->is('projets*');
+    $newsActive = request()->is('actualites*');
+@endphp
+
 <nav class="sticky top-0 z-90 bg-white/95 backdrop-blur-md border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="min-h-20 flex items-center justify-between gap-4 py-3">
@@ -37,8 +44,8 @@
                 <div class="relative group">
                     <button @class([
                         'text-sm font-semibold hover:text-primary flex items-center gap-1',
-                        'text-primary' => request()->routeIs('about'),
-                        'text-gray-700' => ! request()->routeIs('about'),
+                        'text-primary' => $aboutActive,
+                        'text-gray-700' => ! $aboutActive,
                     ])>
                         Qui sommes nous?
                         <svg class="w-4 h-4 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,30 +62,63 @@
                            @if (request()->routeIs('about')) aria-current="page" @endif>
                             Présentation
                         </a>
-                        <a href="{{ url('history') }}" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-primary-light hover:text-primary">
+                        <a href="{{ route('histoire') }}"
+                           @class([
+                               'block px-4 py-2 text-sm font-semibold hover:bg-primary-light hover:text-primary',
+                               'text-primary' => request()->routeIs('histoire'),
+                               'text-gray-700' => ! request()->routeIs('histoire'),
+                           ])
+                           @if (request()->routeIs('histoire')) aria-current="page" @endif>
                             Notre histoire
                         </a>
-                        <a href="{{ url('/notre-equipe') }}" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-primary-light hover:text-primary">
+                        <a href="{{ route('equipe') }}"
+                           @class([
+                               'block px-4 py-2 text-sm font-semibold hover:bg-primary-light hover:text-primary',
+                               'text-primary' => request()->routeIs('equipe'),
+                               'text-gray-700' => ! request()->routeIs('equipe'),
+                           ])
+                           @if (request()->routeIs('equipe')) aria-current="page" @endif>
                             Notre équipe
                         </a>
-                        <a href="{{ url('/nos-objectifs') }}" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-primary-light hover:text-primary">
+                        <a href="{{ url('/nos-objectifs') }}"
+                           @class([
+                               'block px-4 py-2 text-sm font-semibold hover:bg-primary-light hover:text-primary',
+                               'text-primary' => request()->is('nos-objectifs'),
+                               'text-gray-700' => ! request()->is('nos-objectifs'),
+                           ])
+                           @if (request()->is('nos-objectifs')) aria-current="page" @endif>
                             Nos objectifs
                         </a>
                     </div>
                 </div>
 
                 <a href="{{ url('/domaines') }}"
-                         class="text-sm font-semibold text-gray-700 hover:text-primary">
+                   @class([
+                       'text-sm font-semibold hover:text-primary',
+                       'text-primary' => $domainsActive,
+                       'text-gray-700' => ! $domainsActive,
+                   ])
+                   @if ($domainsActive) aria-current="page" @endif>
                     Nos domaines
                 </a>
 
                 <a href="{{ url('/projets') }}"
-                         class="text-sm font-semibold text-gray-700 hover:text-primary">
+                   @class([
+                       'text-sm font-semibold hover:text-primary',
+                       'text-primary' => $projectsActive,
+                       'text-gray-700' => ! $projectsActive,
+                   ])
+                   @if ($projectsActive) aria-current="page" @endif>
                     Nos projets
                 </a>
 
                 <a href="{{ url('/actualites') }}"
-                         class="text-sm font-semibold text-gray-700 hover:text-primary">
+                   @class([
+                       'text-sm font-semibold hover:text-primary',
+                       'text-primary' => $newsActive,
+                       'text-gray-700' => ! $newsActive,
+                   ])
+                   @if ($newsActive) aria-current="page" @endif>
                     Actualités
                 </a>
 
@@ -137,9 +177,9 @@
                 <div class="group">
                     <button @class([
                         'w-full text-left hover:text-primary flex items-center justify-between py-2 px-2 hover:bg-gray-50 transition',
-                        'text-primary' => request()->routeIs('about'),
-                        'text-gray-700' => ! request()->routeIs('about'),
-                    ]) id="dropdown-toggle">
+                        'text-primary' => $aboutActive,
+                        'text-gray-700' => ! $aboutActive,
+                    ]) id="dropdown-toggle" @if ($aboutActive) aria-current="page" @endif>
                         <span class="font-semibold">Qui sommes nous?</span>
                         <svg class="w-4 h-4 transition-transform duration-300" id="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
@@ -155,30 +195,63 @@
                            @if (request()->routeIs('about')) aria-current="page" @endif>
                             Présentation
                         </a>
-                        <a href="{{ url('/notre-histoire') }}" class="block text-sm font-semibold text-gray-600 hover:text-primary py-2 px-2 hover:bg-gray-50 transition">
+                        <a href="{{ route('histoire') }}"
+                           @class([
+                               'block text-sm font-semibold hover:text-primary py-2 px-2 hover:bg-gray-50 transition',
+                               'text-primary' => request()->routeIs('histoire'),
+                               'text-gray-600' => ! request()->routeIs('histoire'),
+                           ])
+                           @if (request()->routeIs('histoire')) aria-current="page" @endif>
                             Notre histoire
                         </a>
-                        <a href="{{ url('/notre-equipe') }}" class="block text-sm font-semibold text-gray-600 hover:text-primary py-2 px-2 hover:bg-gray-50 transition">
+                        <a href="{{ route('equipe') }}"
+                           @class([
+                               'block text-sm font-semibold hover:text-primary py-2 px-2 hover:bg-gray-50 transition',
+                               'text-primary' => request()->routeIs('equipe'),
+                               'text-gray-600' => ! request()->routeIs('equipe'),
+                           ])
+                           @if (request()->routeIs('equipe')) aria-current="page" @endif>
                             Notre équipe
                         </a>
-                        <a href="{{ url('/nos-objectifs') }}" class="block text-sm font-semibold text-gray-600 hover:text-primary py-2 px-2 hover:bg-gray-50 transition">
+                        <a href="{{ url('/nos-objectifs') }}"
+                           @class([
+                               'block text-sm font-semibold hover:text-primary py-2 px-2 hover:bg-gray-50 transition',
+                               'text-primary' => request()->is('nos-objectifs'),
+                               'text-gray-600' => ! request()->is('nos-objectifs'),
+                           ])
+                           @if (request()->is('nos-objectifs')) aria-current="page" @endif>
                             Nos objectifs
                         </a>
                     </div>
                 </div>
 
                 <a href="#domaines"
-                         class="font-semibold text-gray-700 hover:text-primary">
+                   @class([
+                       'font-semibold hover:text-primary',
+                       'text-primary' => $domainsActive,
+                       'text-gray-700' => ! $domainsActive,
+                   ])
+                   @if ($domainsActive) aria-current="page" @endif>
                     Nos domaines
                 </a>
 
                 <a href="#projets"
-                         class="font-semibold text-gray-700 hover:text-primary">
+                   @class([
+                       'font-semibold hover:text-primary',
+                       'text-primary' => $projectsActive,
+                       'text-gray-700' => ! $projectsActive,
+                   ])
+                   @if ($projectsActive) aria-current="page" @endif>
                     Nos projets
                 </a>
 
                 <a href="#actualites"
-                         class="font-semibold text-gray-700 hover:text-primary">
+                   @class([
+                       'font-semibold hover:text-primary',
+                       'text-primary' => $newsActive,
+                       'text-gray-700' => ! $newsActive,
+                   ])
+                   @if ($newsActive) aria-current="page" @endif>
                     Actualités
                 </a>
 
