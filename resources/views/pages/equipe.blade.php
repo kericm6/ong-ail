@@ -230,67 +230,67 @@
                     <tbody class="divide-y divide-slate-200 text-xs sm:text-sm [&_td]:break-words [&_td]:px-3 [&_td]:py-3 sm:[&_td]:px-5 sm:[&_td]:py-4">
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">LAGUDA Kossi Sénam</td>
-                            <td class="px-5 py-4"><span class="text-primary">Homme</span></td>
+                            <td class="px-5 py-4"><span class="text-primary"><span class="sm:hidden">H</span><span class="hidden sm:inline">Homme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-secondary">Président</td>
                         </tr>
                         <tr class="bg-slate-50 hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">AGBENOWOSSI Akossiwa</td>
-                            <td class="px-5 py-4"><span class="text-pink-600">Femme</span></td>
+                            <td class="px-5 py-4"><span class="text-pink-600"><span class="sm:hidden">F</span><span class="hidden sm:inline">Femme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-secondary">Secrétaire</td>
                         </tr>
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">AMEDANU Yawa Kafui</td>
-                            <td class="px-5 py-4"><span class="text-pink-600">Femme</span></td>
+                            <td class="px-5 py-4"><span class="text-pink-600"><span class="sm:hidden">F</span><span class="hidden sm:inline">Femme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-secondary">Trésorière</td>
                         </tr>
                         <tr class="bg-slate-50 hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">CHAKPLA Essi Mansan Séna</td>
-                            <td class="px-5 py-4"><span class="text-pink-600">Femme</span></td>
+                            <td class="px-5 py-4"><span class="text-pink-600"><span class="sm:hidden">F</span><span class="hidden sm:inline">Femme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-secondary">Directrice Exécutive</td>
                         </tr>
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">AYISSA K. Mawuli Abel</td>
-                            <td class="px-5 py-4"><span class="text-primary">Homme</span></td>
+                            <td class="px-5 py-4"><span class="text-primary"><span class="sm:hidden">H</span><span class="hidden sm:inline">Homme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-primary">Responsable Admin. & Financier (RAF)</td>
                         </tr>
                         <tr class="bg-slate-50 hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">DZOGBENU Ama Mawuli</td>
-                            <td class="px-5 py-4"><span class="text-pink-600">Femme</span></td>
+                            <td class="px-5 py-4"><span class="text-pink-600"><span class="sm:hidden">F</span><span class="hidden sm:inline">Femme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-gray-500">Conseillère</td>
                         </tr>
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">GAGNO Kwami Adoukpo</td>
-                            <td class="px-5 py-4"><span class="text-primary">Homme</span></td>
+                            <td class="px-5 py-4"><span class="text-primary"><span class="sm:hidden">H</span><span class="hidden sm:inline">Homme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-gray-500">Conseiller</td>
                         </tr>
                         <tr class="bg-slate-50 hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">AFAMBO</td>
-                            <td class="px-5 py-4"><span class="text-primary">Homme</span></td>
+                            <td class="px-5 py-4"><span class="text-primary"><span class="sm:hidden">H</span><span class="hidden sm:inline">Homme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-primary">Point focal Ogou</td>
                         </tr>
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">DZITRI Edo Immaculé</td>
-                            <td class="px-5 py-4"><span class="text-pink-600">Femme</span></td>
+                            <td class="px-5 py-4"><span class="text-pink-600"><span class="sm:hidden">F</span><span class="hidden sm:inline">Femme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-secondary">Technicienne agricole</td>
                         </tr>
                         <tr class="bg-slate-50 hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">AGAGAH Clifford Marius</td>
-                            <td class="px-5 py-4"><span class="text-primary">Homme</span></td>
+                            <td class="px-5 py-4"><span class="text-primary"><span class="sm:hidden">H</span><span class="hidden sm:inline">Homme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-primary">Animateur de projet</td>
                         </tr>
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">ATITSOGBE Mawufemo</td>
-                            <td class="px-5 py-4"><span class="text-pink-600">Femme</span></td>
+                            <td class="px-5 py-4"><span class="text-pink-600"><span class="sm:hidden">F</span><span class="hidden sm:inline">Femme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-primary">Animatrice de projet</td>
                         </tr>
                         <tr class="bg-slate-50 hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">DJINADJI Ida</td>
-                            <td class="px-5 py-4"><span class="text-pink-600">Femme</span></td>
+                            <td class="px-5 py-4"><span class="text-pink-600"><span class="sm:hidden">F</span><span class="hidden sm:inline">Femme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-purple-600">Bénévole</td>
                         </tr>
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">AMETONAYO Kokouvi</td>
-                            <td class="px-5 py-4"><span class="text-primary">Homme</span></td>
+                            <td class="px-5 py-4"><span class="text-primary"><span class="sm:hidden">H</span><span class="hidden sm:inline">Homme</span></span></td>
                             <td class="px-5 py-4 font-semibold text-gray-500">Chauffeur</td>
                         </tr>
                     </tbody>
