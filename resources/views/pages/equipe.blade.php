@@ -83,7 +83,7 @@
             <div class="grid items-center gap-10 lg:grid-cols-2">
                 <div class="overflow-hidden">
                     <img
-                        src="{{ asset('images/about.jpeg') }}"
+                        src="{{ asset('images/equipe.jpeg') }}"
                         alt="Structure de gouvernance de l'ONG AIL"
                         class="h-[420px] w-full object-cover"
                     />
