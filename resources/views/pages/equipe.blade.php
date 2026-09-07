@@ -113,14 +113,14 @@
 
         {{-- 2. Organigramme Schématique --}}
         <div class="mb-20">
-            <div class="w-screen relative left-1/2 -ml-[50vw] overflow-x-auto bg-white p-6 sm:p-10">
+            <div class="relative left-1/2 -ml-[50vw] w-screen overflow-hidden bg-white p-4 sm:p-10">
         <div class="text-center max-w-3xl mx-auto mb-12">
             <h2 class="text-xs font-bold uppercase tracking-wider text-[var(--color-accent)] mb-2">Gouvernance</h2>
             <h3 class="text-2xl sm:text-3xl font-black uppercase text-[var(--color-dark)] ">
                 Organigramme Fonctionnel
             </h3>
         </div>
-        <div class="relative mx-auto min-w-[700px] max-w-4xl text-center">
+        <div class="relative mx-auto w-full max-w-4xl text-center">
 
             {{-- Level 1: Assemblée Générale --}}
             <div class="relative z-10 mx-auto w-72 bg-[var(--color-dark)] px-5 py-4 text-white shadow-md">
@@ -133,17 +133,18 @@
             </div>
 
             {{-- Ligne transversale & barres descendantes vers Gouvernance / Contrôle --}}
-            <div class="relative max-w-2xl mx-auto h-6">
+            <div class="relative mx-auto h-6 max-w-2xl">
                 {{-- Ligne horizontale reliant les 2 piliers --}}
-                <div class="absolute top-0 left-[25%] right-[25%] h-px bg-slate-300"></div>
+                <div class="absolute left-[25%] right-[25%] top-0 h-px bg-slate-300 max-md:hidden"></div>
                 {{-- Barre au-dessus de Gouvernance (CA) --}}
-                <div class="absolute top-0 left-[25%] h-full w-px bg-slate-300"></div>
+                <div class="absolute left-[25%] top-0 h-full w-px bg-slate-300 max-md:hidden"></div>
                 {{-- Barre au-dessus de Contrôle (Conseil de Contrôle) --}}
-                <div class="absolute top-0 right-[25%] h-full w-px bg-slate-300"></div>
+                <div class="absolute right-[25%] top-0 h-full w-px bg-slate-300 max-md:hidden"></div>
+                <div class="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-slate-300 md:hidden"></div>
             </div>
 
             {{-- Level 2: CA et Conseil de Contrôle --}}
-            <div class="relative z-10 grid grid-cols-2 gap-12 max-w-2xl mx-auto">
+            <div class="relative z-10 mx-auto grid max-w-2xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-12">
                 <div class="bg-secondary/10 px-5 py-4 text-[var(--color-dark)] shadow-sm">
                     <span class="mt-1 block font-bold">Conseil d'Administration (CA)</span>
                 </div>
@@ -155,22 +156,25 @@
             </div>
 
             {{-- Connecteur CA -> Direction Exécutive --}}
-            <div class="w-full h-10 grid grid-cols-2 gap-12 max-w-2xl mx-auto">
+            <div class="mx-auto hidden h-10 w-full max-w-2xl grid-cols-2 gap-12 md:grid">
                 <div class="flex justify-center">
                     <div class="w-px h-full bg-slate-300"></div>
                 </div>
                 <div></div>
             </div>
+            <div class="mx-auto flex h-8 justify-center md:hidden">
+                <div class="h-full w-px bg-slate-300"></div>
+            </div>
 
             {{-- Level 3: Direction Exécutive --}}
-            <div class="relative z-10 grid grid-cols-2 gap-12 max-w-2xl mx-auto">
+            <div class="relative z-10 mx-auto grid max-w-2xl grid-cols-1 gap-12 md:grid-cols-2">
                 <div class="bg-primary px-5 py-4 text-white shadow-md">
                     <span class="mt-1 block font-bold">Direction Exécutive</span>
                 </div>
             </div>
 
             {{-- Connecteur Direction Exécutive -> Pôles Opérationnels --}}
-            <div class="relative h-12 w-full max-w-2xl mx-auto">
+            <div class="relative mx-auto hidden h-12 w-full max-w-2xl md:block">
                 {{-- Ligne descendant de la Direction Exécutive --}}
                 <div class="absolute left-[25%] top-0 h-6 w-px bg-slate-300"></div>
                 {{-- Ligne horizontale distributive --}}
@@ -180,12 +184,15 @@
                 <!-- <div class="absolute top-6 left-1/2 h-6 w-px bg-slate-300 -translate-x-1/2"></div> -->
                 <div class="absolute top-6 right-[16.66%] h-6 w-px bg-slate-300"></div>
             </div>
+            <div class="mx-auto flex h-8 justify-center md:hidden">
+                <div class="h-full w-px bg-slate-300"></div>
+            </div>
 
             {{-- Level 4: Pôles Opérationnels --}}
-            <div class="relative z-10 mx-auto max-w-2xl">
+            <div class="relative z-10 mx-auto w-full max-w-2xl">
                 <!-- <div class="absolute left-[75%] top-[-1.5rem] h-6 w-px bg-slate-300"></div> -->
                 <!-- <div class="absolute left-[50%] top-[-1.5rem] h-px w-[25%] bg-slate-300"></div> -->
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div class="bg-[var(--color-secondary-light)] px-4 py-4 text-sm font-bold text-[var(--color-dark)] shadow-sm">
                         Chargé de mission.
                     </div>
@@ -211,16 +218,16 @@
                 </p>
             </div>
 
-            <div class="overflow-x-auto border border-slate-200 bg-white shadow-sm">
-                <table class="w-full min-w-[680px] border-collapse text-left">
+            <div class="w-full overflow-hidden border border-slate-200 bg-white shadow-sm">
+                <table class="w-full min-w-0 table-fixed border-collapse text-left">
                     <thead class="bg-[var(--color-dark)] text-xs uppercase tracking-wider text-white">
                         <tr>
-                            <th class="px-5 py-4 font-bold">Nom</th>
-                            <th class="px-5 py-4 font-bold">Genre</th>
-                            <th class="px-5 py-4 font-bold">Fonction</th>
+                            <th class="w-[38%] px-3 py-3 font-bold sm:px-5 sm:py-4">Nom</th>
+                            <th class="w-[18%] px-3 py-3 font-bold sm:px-5 sm:py-4">Genre</th>
+                            <th class="w-[44%] px-3 py-3 font-bold sm:px-5 sm:py-4">Fonction</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-200 text-sm">
+                    <tbody class="divide-y divide-slate-200 text-xs sm:text-sm [&_td]:break-words [&_td]:px-3 [&_td]:py-3 sm:[&_td]:px-5 sm:[&_td]:py-4">
                         <tr class="bg-white hover:bg-[var(--color-secondary-light)]">
                             <td class="px-5 py-4 font-bold text-[var(--color-dark)]">LAGUDA Kossi Sénam</td>
                             <td class="px-5 py-4"><span class="text-primary">Homme</span></td>

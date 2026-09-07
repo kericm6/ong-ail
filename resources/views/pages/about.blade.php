@@ -272,6 +272,7 @@
 
         <div class="relative mx-auto max-w-6xl">
             <div class="absolute left-5 top-5 hidden h-px w-[calc(100%-2.5rem)] bg-secondary/30 lg:block"></div>
+            <div class="absolute bottom-5 left-5 top-5 w-px bg-secondary/30 lg:hidden"></div>
             <div class="grid gap-8 lg:grid-cols-6 lg:gap-5">
                 @foreach([
                     ['title' => 'Écouter', 'desc' => 'Identifier les besoins avec les communautés.'],
