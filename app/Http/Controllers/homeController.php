@@ -20,4 +20,7 @@ class homeController extends Controller
     public function equipe(){
         return view('pages.equipe');
     }
+    public function objectifs(){
+        return view('pages.objectifs');
+    }
 }

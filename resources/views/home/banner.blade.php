@@ -4,20 +4,19 @@
     <div class="owl-carousel owl-theme banner-carousel w-screen max-w-none ml-0" id="banner-carousel">
 
         {{-- Slide 1 - Accueil --}}
-        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden sm:h-[450px] md:h-[500px] lg:h-[600px]">
-            <img src="{{ asset('images/S1.png') }}" alt="Accueil AIL" class="absolute inset-0 h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent"></div>
+        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden bg-[var(--color-dark)] sm:h-[450px] md:h-[500px] lg:h-[600px]">
+            <img src="{{ asset('images/slide1.jpg') }}" alt="Accueil AIL" class="absolute inset-0 h-full w-full object-cover object-[center_20%] opacity-10" />
             <div class="relative z-10 w-full h-full flex flex-col justify-center">
                 <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
-                        <p class="text-secondary text-xl font-semibold mb-3">Bienvenue chez AIL</p>
+                        <p class="text-accent text-xl font-semibold mb-3">Bienvenue chez AIL</p>
                         <h2 class="mb-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
                             Ensemble pour un développement<br class="hidden sm:block" />local durable
                         </h2>
                         <p class="mb-6 text-base text-white/80 sm:text-lg md:text-xl">
                             Nous accompagnons les initiatives locales et renforçons l'autonomie des communautés
                         </p>
-                        <a href="#about"
+                        <a href="{{ route('about') }}"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold hover:bg-white hover:text-secondary transition">
                             Découvrir AIL
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,9 +30,8 @@
         </div>
 
         {{-- Slide 2 - Nos Domaines --}}
-        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden sm:h-[450px] md:h-[500px] lg:h-[600px]">
-            <img src="{{ asset('images/S2.png') }}" alt="Nos Domaines" class="absolute inset-0 h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent"></div>
+        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden bg-[var(--color-dark)] sm:h-[450px] md:h-[500px] lg:h-[600px]">
+            <img src="{{ asset('images/histoie2.jpeg') }}" alt="Nos Domaines" class="absolute inset-0 h-full w-full object-cover object-[center_70%] opacity-10" />
             <div class="relative z-10 w-full h-full flex flex-col justify-center">
                 <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -44,7 +42,7 @@
                         <p class="mb-6 text-base text-white/80 sm:text-lg md:text-xl">
                             Nos actions couvrent l'éducation, la santé et le renforcement de capacités locales
                         </p>
-                        <a href="#services"
+                        <a href=""
                             class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold hover:bg-white hover:text-secondary transition">
                             Nos domaines
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,9 +56,8 @@
         </div>
 
         {{-- Slide 3 - Projets et Initiatives --}}
-        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden sm:h-[450px] md:h-[500px] lg:h-[600px]">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop" alt="Nos Projets" class="absolute inset-0 h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-primary/70"></div>
+        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden bg-[var(--color-dark)] sm:h-[450px] md:h-[500px] lg:h-[600px]">
+            <img src="{{asset('images/slide3.jpeg')}}" alt="Nos Projets" class="absolute inset-0 h-full w-full object-cover object-[center_40%] opacity-10" />
             <div class="relative z-10 w-full h-full flex flex-col justify-center">
                 <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -71,7 +68,7 @@
                         <p class="mb-6 text-base text-white/80 sm:text-lg md:text-xl">
                             Découvrez comment nous créons des opportunités pour les communautés locales
                         </p>
-                        <a href="#projects"
+                        <a href=""
                             class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold hover:bg-white hover:text-secondary transition">
                             Voir nos projets
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,9 +82,8 @@
         </div>
 
         {{-- Slide 4 - Engagement --}}
-        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden sm:h-[450px] md:h-[500px] lg:h-[600px]">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop" alt="Engagement" class="absolute inset-0 h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-primary/70"></div>
+        <div class="banner-slide relative flex h-[430px] items-center overflow-hidden bg-[var(--color-dark)] sm:h-[450px] md:h-[500px] lg:h-[600px]">
+            <img src="{{ asset('images/objectifs.jpeg') }}" alt="Engagement" class="absolute inset-0 h-full w-full object-cover object-[center_20%] opacity-10" />
             <div class="relative z-10 w-full h-full flex flex-col justify-center">
                 <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -98,7 +94,7 @@
                         <p class="mb-6 text-base text-white/80 sm:text-lg md:text-xl">
                             Ensemble, nous construisons un avenir meilleur pour les générations futures
                         </p>
-                        <a href="#contact"
+                        <a href="{{route('contact.index')}}"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold hover:bg-white hover:text-secondary transition">
                             Nous soutenir
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

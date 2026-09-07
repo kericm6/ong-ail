@@ -15,7 +15,7 @@
                 </div>
 
                 <!-- Texte -->
-                <h2 class="text-3xl font-extrabold tracking-wide text-secondary uppercase border-b">
+                <h2 class="text-3xl font-extrabold tracking-wide text-[var(--color-dark)] uppercase border-b border-secondary">
                     Notre Mission
                 </h2>
 
@@ -28,8 +28,8 @@
 
                 <!-- CTA -->
                 <div class="pt-2">
-                    <a href="/a-propos" class="inline-flex items-center gap-2 text-red-700 font-semibold text-sm hover:text-[var(--color-secondary)] hover:underline transition-colors">
-                        <span class="text-primary">&rarr;</span>
+                    <a href="{{ route('about') }}" class="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold text-sm hover:text-[var(--color-secondary)] hover:underline transition-colors">
+                        <span class="text-[var(--color-secondary)]">&rarr;</span>
                         <span>Découvrir nos valeurs et notre histoire</span>
                     </a>
                 </div>
@@ -59,7 +59,7 @@
                             Grâce à l'aide de nos bénévoles, nous avons pu ausculter plus de 300 enfants ce weekend...
                         </p>
                         <a href="/blog/succes-campagne-sante" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary group-hover:text-[var(--color-secondary)] transition-colors">
-                            <span class="text-red">&rarr;</span>
+                            <span class="text-[var(--color-secondary)]">&rarr;</span>
                             <span>Lire la suite</span>
                         </a>
                     </article>
@@ -74,7 +74,7 @@
                             Signature officielle d'un accord visant à équiper 3 nouvelles écoles d'outils numériques.
                         </p>
                         <a href="/blog/succes-campagne-sante" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary group-hover:text-[var(--color-secondary)] transition-colors">
-                            <span class="text-red">&rarr;</span>
+                            <span class="text-[var(--color-secondary)]">&rarr;</span>
                             <span>Lire la suite</span>
                         </a>
                     </article>
@@ -89,7 +89,7 @@
                             Découvrez le parcours inspirant d'Aminata, bénéficiaire de notre programme.
                         </p>
                         <a href="/blog/succes-campagne-sante" class="inline-flex items-center gap-1.5 text-xs font-bold text-secondary group-hover:text-[var(--color-secondary)] transition-colors">
-                            <span class="text-red">&rarr;</span>
+                            <span class="text-[var(--color-secondary)]">&rarr;</span>
                             <span>Lire la suite</span>
                         </a>
                     </article>
@@ -97,7 +97,7 @@
                 </div>
                 <!-- Pied de Sidebar -->
                 <div class="mt-6 pt-4 border-t border-gray-100 text-center">
-                    <a href="/blog" class="inline-flex items-center gap-2 text-sm  text-red-700 font-semibold hover:text-secondary transition-colors">
+                    <a href="/blog" class="inline-flex items-center gap-2 text-sm text-[var(--color-primary)] font-semibold hover:text-secondary transition-colors">
                         <span>Voir tous les articles du blog</span>
                         <span class="text-[var(--color-secondary)]">&rarr;</span>
                     </a>

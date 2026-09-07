@@ -80,13 +80,13 @@
                            @if (request()->routeIs('equipe')) aria-current="page" @endif>
                             Notre équipe
                         </a>
-                        <a href="{{ url('/nos-objectifs') }}"
+                        <a href="{{ route('objectifs') }}"
                            @class([
                                'block px-4 py-2 text-sm font-semibold hover:bg-primary-light hover:text-primary',
-                               'text-primary' => request()->is('nos-objectifs'),
-                               'text-gray-700' => ! request()->is('nos-objectifs'),
+                               'text-primary' => request()->routeIs('objectifs'),
+                               'text-gray-700' => ! request()->routeIs('objectifs'),
                            ])
-                           @if (request()->is('nos-objectifs')) aria-current="page" @endif>
+                           @if (request()->routeIs('objectifs')) aria-current="page" @endif>
                             Nos objectifs
                         </a>
                     </div>
@@ -213,13 +213,13 @@
                            @if (request()->routeIs('equipe')) aria-current="page" @endif>
                             Notre équipe
                         </a>
-                        <a href="{{ url('/nos-objectifs') }}"
+                        <a href="{{ route('objectifs') }}"
                            @class([
                                'block text-sm font-semibold hover:text-primary py-2 px-2 hover:bg-gray-50 transition',
-                               'text-primary' => request()->is('nos-objectifs'),
-                               'text-gray-600' => ! request()->is('nos-objectifs'),
+                               'text-primary' => request()->routeIs('objectifs'),
+                               'text-gray-600' => ! request()->routeIs('objectifs'),
                            ])
-                           @if (request()->is('nos-objectifs')) aria-current="page" @endif>
+                           @if (request()->routeIs('objectifs')) aria-current="page" @endif>
                             Nos objectifs
                         </a>
                     </div>

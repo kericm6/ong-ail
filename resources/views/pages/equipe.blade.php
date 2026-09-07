@@ -20,18 +20,18 @@
 
     <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
 
-        <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--color-primary-light)] mb-4">
-            <a href="/" class="hover:text-[var(--color-accent)] transition-colors">Accueil</a>
+        <nav class="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--color-primary-light)]">
+            <a href="{{ route('home') }}" class="transition-colors hover:text-[var(--color-accent)]">Accueil</a>
             <span>/</span>
             <span class="text-[var(--color-accent)]">Notre équipe</span>
         </nav>
 
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-4">
-          Gouvernance & <span class="text-secondary">Équipe</span>
+        <h1 class="mb-4 text-3xl font-black uppercase tracking-tight text-white sm:text-4xl md:text-5xl">
+            Gouvernance <span class="text-secondary">& Équipe</span>
         </h1>
 
-        <p class="text-sm sm:text-base text-gray-300 max-w-2xl leading-relaxed">
-         Découvrez la structure organisationnelle et les femmes et hommes engagés qui pilotent les actions de l'ONG AIL au quotidien pour le développement local.
+        <p class="max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base">
+            Découvrez la structure organisationnelle et les femmes et hommes engagés qui pilotent les actions de l'ONG AIL au quotidien pour le développement local.
         </p>
 
     </div>
@@ -123,7 +123,7 @@
         <div class="relative mx-auto min-w-[700px] max-w-4xl text-center">
 
             {{-- Level 1: Assemblée Générale --}}
-            <div class="relative z-10 mx-auto w-72 border-t-4 border-[var(--color-dark)] bg-[var(--color-dark)] px-5 py-4 text-white shadow-md">
+            <div class="relative z-10 mx-auto w-72 bg-[var(--color-dark)] px-5 py-4 text-white shadow-md">
                 <span class="mt-1 block font-bold">Assemblée Générale (AG)</span>
             </div>
 
@@ -144,11 +144,11 @@
 
             {{-- Level 2: CA et Conseil de Contrôle --}}
             <div class="relative z-10 grid grid-cols-2 gap-12 max-w-2xl mx-auto">
-                <div class="border-t-4 border-secondary bg-secondary/10 px-5 py-4 text-[var(--color-dark)] shadow-sm">
+                <div class="bg-secondary/10 px-5 py-4 text-[var(--color-dark)] shadow-sm">
                     <span class="mt-1 block font-bold">Conseil d'Administration (CA)</span>
                 </div>
 
-                <div class="border-t-4 border-accent bg-accent/15 px-5 py-4 text-[var(--color-dark)] shadow-sm">
+                <div class="bg-accent/15 px-5 py-4 text-[var(--color-dark)] shadow-sm">
                     <span class="mt-1 block font-bold">Conseil de Surveillant
 </span>
                 </div>
@@ -164,7 +164,7 @@
 
             {{-- Level 3: Direction Exécutive --}}
             <div class="relative z-10 grid grid-cols-2 gap-12 max-w-2xl mx-auto">
-                <div class="border-t-4 border-primary bg-primary px-5 py-4 text-white shadow-md">
+                <div class="bg-primary px-5 py-4 text-white shadow-md">
                     <span class="mt-1 block font-bold">Direction Exécutive</span>
                 </div>
             </div>
@@ -186,10 +186,10 @@
                 <!-- <div class="absolute left-[75%] top-[-1.5rem] h-6 w-px bg-slate-300"></div> -->
                 <!-- <div class="absolute left-[50%] top-[-1.5rem] h-px w-[25%] bg-slate-300"></div> -->
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="border-t-4 border-secondary bg-[var(--color-secondary-light)] px-4 py-4 text-sm font-bold text-[var(--color-dark)] shadow-sm">
+                    <div class="bg-[var(--color-secondary-light)] px-4 py-4 text-sm font-bold text-[var(--color-dark)] shadow-sm">
                         Chargé de mission.
                     </div>
-                    <div class="border-t-4 border-[var(--color-accent)] bg-[var(--color-accent-light)] px-4 py-4 text-sm font-bold text-[var(--color-dark)] shadow-sm">
+                    <div class="bg-[var(--color-accent-light)] px-4 py-4 text-sm font-bold text-[var(--color-dark)] shadow-sm">
                         Secrétariat comptablilité
                     </div>
                 </div>
@@ -288,6 +288,20 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div class="mt-10 bg-[var(--color-secondary-light)] px-6 py-7 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:px-8">
+                <div>
+                    <h3 class="font-display text-xl font-extrabold text-[var(--color-dark)] sm:text-2xl">
+                        Envie de rejoindre l’équipe ?
+                    </h3>
+                    <p class="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">
+                        Vous souhaitez contribuer aux actions de l’ONG AIL comme bénévole, technicien ou partenaire ? Présentez-nous votre profil et vos motivations.
+                    </p>
+                </div>
+                <a href="{{ route('contact.index') }}" class="mt-5 inline-flex shrink-0 items-center justify-center bg-[var(--color-dark)] px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-[var(--color-primary)] sm:mt-0">
+                    Proposer ma candidature
+                </a>
             </div>
             <!--
 

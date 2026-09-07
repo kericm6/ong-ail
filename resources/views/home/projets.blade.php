@@ -45,7 +45,7 @@
                             Distribution de fournitures, réhabilitation de classes et bourses d'études pour les enfants défavorisés.
                         </p>
                     </div>
-                    <a href="/projets/education" class="inline-flex items-center gap-1.5 text-sm font-bold text-red-700 group-hover:text-[var(--color-secondary)] transition-colors">
+                    <a href="/projets/education" class="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors">
                         <span class="text-[var(--color-secondary)]">&rarr;</span>
                         <span>Voir nos actions</span>
                     </a>
@@ -78,7 +78,7 @@
                             Campagnes de dépistage mobile, accès aux soins de base et distribution de kits d'hygiène.
                         </p>
                     </div>
-                    <a href="/projets/sante" class="inline-flex items-center gap-1.5 text-sm font-bold text-red-700 group-hover:text-[var(--color-secondary)] transition-colors">
+                    <a href="/projets/sante" class="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors">
                         <span class="text-[var(--color-secondary)]">&rarr;</span>
                         <span>Voir le bilan</span>
                     </a>
@@ -111,7 +111,7 @@
                             Formations professionnelles, soutien aux activités génératrices de revenus et micro-crédit.
                         </p>
                     </div>
-                    <a href="/projets/autonomisation" class="inline-flex items-center gap-1.5 text-sm font-bold text-red-700 group-hover:text-[var(--color-secondary)] transition-colors">
+                    <a href="/projets/autonomisation" class="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors">
                         <span class="text-[var(--color-secondary)]">&rarr;</span>
                         <span>Voir nos actions</span>
                     </a>
