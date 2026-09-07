@@ -29,4 +29,7 @@ class homeController extends Controller
     public function projets(){
         return view('pages.projets');
     }
+    public function blog(){
+        return view('pages.blog');
+    }
 }
