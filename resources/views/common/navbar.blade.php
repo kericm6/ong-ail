@@ -225,7 +225,7 @@
                     </div>
                 </div>
 
-                <a href="#domaines"
+                <a href="{{ route('domaines') }}"
                    @class([
                        'font-semibold hover:text-primary',
                        'text-primary' => $domainsActive,

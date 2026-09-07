@@ -23,4 +23,7 @@ class homeController extends Controller
     public function objectifs(){
         return view('pages.objectifs');
     }
+    public function domaines(){
+        return view('pages.domaines');
+    }
 }
