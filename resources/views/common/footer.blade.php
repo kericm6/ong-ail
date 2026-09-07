@@ -36,7 +36,7 @@
                 <ul class="space-y-3 text-sm text-gray-300">
                     <li class="flex items-start gap-2">
                         <span class="text-[var(--color-secondary)] font-bold">&bull;</span>
-                        <span>Siège Social, Quartier Administratif</span>
+                        <span>Kpalimé-Togo</span>
                     </li>
                     <li class="flex items-center gap-2">
                         <span class="text-[var(--color-secondary)] font-bold">&bull;</span>

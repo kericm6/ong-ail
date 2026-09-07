@@ -92,7 +92,7 @@
                     </div>
                 </div>
 
-                <a href="{{ url('/domaines') }}"
+                <a href="{{ route('domaines') }}"
                    @class([
                        'text-sm font-semibold hover:text-primary',
                        'text-primary' => $domainsActive,
@@ -102,7 +102,7 @@
                     Nos domaines
                 </a>
 
-                <a href="{{ url('/projets') }}"
+                <a href="{{ route('projets') }}"
                    @class([
                        'text-sm font-semibold hover:text-primary',
                        'text-primary' => $projectsActive,
@@ -235,7 +235,7 @@
                     Nos domaines
                 </a>
 
-                <a href="#projets"
+                <a href="{{ route('projets') }}"
                    @class([
                        'font-semibold hover:text-primary',
                        'text-primary' => $projectsActive,

@@ -51,36 +51,18 @@
 
 <section class="bg-white py-16 sm:py-20 lg:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="grid gap-12 lg:grid-cols-12 lg:gap-20">
-            <div class="lg:col-span-5  lg:pl-8">
-                <div class="mb-5 flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-accent">
-                    <span class="h-px w-10 bg-accent text-accent"></span>
-                    Objectifs de l’ONG AIL
-                </div>
+        <div class="mx-auto max-w-4xl bg-[var(--color-primary-light)] px-6 py-8 text-center sm:px-10 sm:py-10">
+            <h2 class="font-display text-2xl font-extrabold text-[var(--color-primary-dark)] sm:text-3xl">
+                Objectif général
+            </h2>
 
-                <h2 class="max-w-lg text-3xl font-extrabold leading-tight tracking-tight text-[var(--color-dark)] sm:text-4xl">
-                    Agir pour l’autonomie et le développement local
-                </h2>
-            </div>
-
-            <div class=" bg-[var(--color-primary-light)] px-6 py-7 sm:px-8 sm:py-9 lg:col-span-7">
-                <div class="mb-4 flex items-center gap-3">
-                    <h3 class="text-xl font-extrabold text-[var(--color-primary-dark)] sm:text-2xl">
-                        Objectif général
-                    </h3>
-                </div>
-
-                <p class="text-base leading-8 text-[var(--color-dark)] sm:text-lg">
-                    Contribuer à l’autonomisation économique, sociale et professionnelle des femmes et des jeunes filles vulnérables dans les communautés locales, tout en promouvant l’innovation, la durabilité environnementale et le développement local intégré.
-                </p>
-            </div>
+            <p class="mx-auto mt-5 max-w-3xl text-base leading-8 text-[var(--color-dark)] sm:text-lg">
+                Contribuer à l’autonomisation économique, sociale et professionnelle des femmes et des jeunes filles vulnérables dans les communautés locales, tout en promouvant l’innovation, la durabilité environnementale et le développement local intégré.
+            </p>
         </div>
 
         <div class="mt-16 border-t border-gray-200 pt-10">
             <div class="mb-8 max-w-2xl">
-                <div class="mb-3 text-sm font-bold uppercase tracking-wider text-secondary">
-                    Nos priorités d’action
-                </div>
                 <h3 class="text-2xl font-extrabold text-[var(--color-dark)] sm:text-3xl">
                     Objectifs spécifiques
                 </h3>

@@ -39,10 +39,6 @@
 <section class="bg-[var(--color-light)] py-16 sm:py-20 lg:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class=" mb-12 max-w-3xl  sm:mb-16">
-            <div class="mb-4 flex items-center  gap-3 text-sm font-bold uppercase tracking-wider text-secondary">
-                Nos domaines d’action
-                <span class="h-px w-10 bg-secondary"></span>
-            </div>
             <h2 class="font-display text-3xl font-extrabold leading-tight text-[var(--color-dark)] sm:text-4xl">
                 Des actions pensées avec les communautés
             </h2>
@@ -95,7 +91,6 @@
                         <span class="flex h-11 w-11 items-center justify-center bg-secondary text-sm font-black text-white transition-colors group-hover:bg-[var(--color-primary)]">
                             {{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}
                         </span>
-                        <span class="h-px w-16 bg-[var(--color-accent)]"></span>
                     </div>
                     <h3 class="font-display text-lg font-extrabold leading-snug text-[var(--color-dark)] sm:text-xl">
                         {{ $domaine['title'] }}

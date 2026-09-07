@@ -26,4 +26,7 @@ class homeController extends Controller
     public function domaines(){
         return view('pages.domaines');
     }
+    public function projets(){
+        return view('pages.projets');
+    }
 }

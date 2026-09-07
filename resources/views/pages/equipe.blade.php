@@ -71,7 +71,6 @@
         {{-- 1. Structure organisationnelle --}}
         <div class="mb-24">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-xs font-bold uppercase tracking-wider text-[var(--color-accent)] mb-2">Structure & Gouvernance</h2>
                 <h3 class="text-2xl font-extrabold text-[var(--color-dark)] sm:text-3xl">
                     Les Organes de Décision et d'Action
                 </h3>
@@ -115,7 +114,6 @@
         <div class="mb-20">
             <div class="relative left-1/2 -ml-[50vw] w-screen overflow-hidden bg-white p-4 sm:p-10">
         <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-xs font-bold uppercase tracking-wider text-[var(--color-accent)] mb-2">Gouvernance</h2>
             <h3 class="text-2xl sm:text-3xl font-black uppercase text-[var(--color-dark)] ">
                 Organigramme Fonctionnel
             </h3>
@@ -209,7 +207,6 @@
         {{-- 3. Membres du Conseil d'Administration & Équipe --}}
         <div>
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-xs font-bold uppercase tracking-wider text-[var(--color-accent)] mb-2">Membres & Collaborateurs</h2>
                 <h3 class="text-2xl sm:text-3xl font-black uppercase text-[var(--color-dark)]">
                     Conseil d'Administration & Équipe Exécutive
                 </h3>

@@ -11,4 +11,5 @@ Route::get('/notre-histoire', [homeController::class, 'history'])->name('histoir
 Route::get('/notre-equipe', [homeController::class, 'equipe'])->name('equipe');
 Route::get('/nos-objectifs', [homeController::class, 'objectifs'])->name('objectifs');
 Route::get('/domaines', [homeController::class, 'domaines'])->name('domaines');
+Route::get('/projets', [homeController::class, 'projets'])->name('projets');
 Route::get('/contact', [contactController::class, 'index'])->name('contact.index');

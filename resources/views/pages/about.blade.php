@@ -43,11 +43,6 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
             <div class="lg:col-span-7 space-y-6">
-                <div class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-secondary">
-                    <span class="h-px w-10 bg-secondary"></span>
-                    Notre identité
-                </div>
-
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-[var(--color-dark)] tracking-tight">
                     Agir localement, transformer durablement
                 </h2>
@@ -96,10 +91,6 @@
         <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
             <div class="lg:col-span-7">
                 <div class="mb-9 max-w-2xl">
-                    <div class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-secondary">
-                        <span class="h-px w-10 bg-secondary"></span>
-                        Piliers d'action
-                    </div>
                     <h2 class="mt-3 text-3xl font-extrabold text-[var(--color-dark)] sm:text-4xl">Nos domaines d’intervention</h2>
                     <p class="mt-4 text-base leading-relaxed text-[var(--color-gray)]">
                         Des actions concrètes, pensées avec les communautés pour renforcer leur autonomie et préserver leur environnement.
@@ -179,11 +170,7 @@
 
             <div class="lg:col-span-7">
                 <div class="mb-8 max-w-xl">
-                    <span class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-secondary">
-                        <span class="h-px w-10 bg-secondary"></span>
-                        Cap sur l’avenir
-                    </span>
-                    <h2 class="mt-4 text-3xl font-extrabold text-[var(--color-dark)] sm:text-4xl">Nos objectifs principaux</h2>
+                    <h2 class="text-3xl font-extrabold text-[var(--color-dark)] sm:text-4xl">Nos objectifs principaux</h2>
                     <p class="mt-4 text-base leading-relaxed text-[var(--color-gray)]">
                         Chaque projet est pensé pour produire un changement concret, renforcer les capacités locales et ouvrir de nouvelles possibilités.
                     </p>
@@ -227,11 +214,7 @@
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
             <div class="lg:col-span-4">
-                <span class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-accent">
-                    <span class="h-px w-10 bg-accent"></span>
-                    Nos principes d’action
-                </span>
-                <h2 class="mt-4 text-3xl font-extrabold text-white sm:text-4xl">Nos valeurs, notre manière d’agir</h2>
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Nos valeurs, notre manière d’agir</h2>
                 <p class="mt-5 max-w-md text-sm leading-relaxed text-white/70 sm:text-base">
                     Ces repères orientent nos décisions, nos partenariats et chaque action menée avec les communautés.
                 </p>
@@ -263,8 +246,7 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mx-auto mb-14 max-w-3xl text-center">
-            <span class="text-sm font-semibold uppercase tracking-wider text-secondary">Approche sur le terrain</span>
-            <h2 class="mt-2 text-3xl font-extrabold text-[var(--color-dark)] sm:text-4xl">Notre méthodologie</h2>
+            <h2 class="text-3xl font-extrabold text-[var(--color-dark)] sm:text-4xl">Notre méthodologie</h2>
             <p class="mt-3 text-sm leading-relaxed text-[var(--color-gray)] sm:text-base">
                 Une démarche progressive qui transforme les besoins identifiés en actions suivies et durables.
             </p>
